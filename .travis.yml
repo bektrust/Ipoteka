@@ -25,12 +25,10 @@ install:
   - export PATH=$PATH:~/.local/bin/
   - ls -la
   - echo "TODO COMPILE 32bit"
-  - yes | cp -f buildozer.spec buildozer.spec
-  - yes | travis_wait 20 buildozer android debug
+  - yes | buildozer android debug
   - ls -la
   - ls bin/ -l
   - echo "TODO"
   - gem install dpl --pre
   - dpl releases --token $PyCharm GitHub integration plugin --file "bin/Ipoteka-0.1-armeabi-v7a-debug.apk" --tag_name "v.0.1"
-script:
   - echo "OK"
