@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = Mortgage Calculator
+title = Ipoteka
 
 # (str) Package name
-package.name = mortgagecalculator
+package.name = ipoteka
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.wiseplat
+package.domain = org.bektrust
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -49,7 +49,7 @@ presplash.filename = %(source.dir)s/data/logo/Splash.png
 icon.filename = %(source.dir)s/data/logo/icon.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
-orientation = all
+orientation = landscape
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
