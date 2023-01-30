@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = Ipoteka
+title = Mortgage Calculator
 
 # (str) Package name
-package.name = Ipoteka
+package.name = mortgagecalculator
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.bektrust
+package.domain = org.wiseplat
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -46,10 +46,10 @@ requirements = python3,kivy==2.2.0,kivymd,https://github.com/kivymd/KivyMD/archi
 presplash.filename = %(source.dir)s/data/logo/Splash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/data/logo/logo.png
+icon.filename = %(source.dir)s/data/logo/icon.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
-orientation = portrait
+orientation = all
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
@@ -62,7 +62,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.10
 
 # Kivy version to use
 osx.kivy_version = 2.2.0
@@ -168,14 +168,14 @@ fullscreen = 0
 # android.add_compile_options = "sourceCompatibility = 1.8", "targetCompatibility = 1.8"
 
 # (list) Gradle repositories to add {can be necessary for some android.gradle_dependencies}
-# please enclose in double quotes 
+# please enclose in double quotes
 # e.g. android.gradle_repositories = "maven { url 'https://kotlin.bintray.com/ktor' }"
 #android.add_gradle_repositories =
 
-# (list) packaging options to add 
+# (list) packaging options to add
 # see https://google.github.io/android-gradle-dsl/current/com.android.build.gradle.internal.dsl.PackagingOptions.html
 # can be necessary to solve conflicts in gradle_dependencies
-# please enclose in double quotes 
+# please enclose in double quotes
 # e.g. android.add_packaging_options = "exclude 'META-INF/common.kotlin_module'", "exclude 'META-INF/*.kotlin_module'"
 #android.add_packaging_options =
 
@@ -226,7 +226,7 @@ fullscreen = 0
 #android.copy_libs = 1
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
-android.arch = arm64-v8a
+android.arch = armeabi-v7a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
@@ -295,7 +295,7 @@ ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
 ios.ios_deploy_branch = 1.10.0
 
 # (bool) Whether or not to sign the code
-ios.codesign.allowed = true
+ios.codesign.allowed = false
 
 # (str) Name of the certificate to use for signing the debug version
 # Get a list of available identities: buildozer ios list_identities
